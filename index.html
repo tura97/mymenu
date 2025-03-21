@@ -39,21 +39,17 @@
             border-radius: 5px;
         }
         .gin-details {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #333;
-            border-radius: 10px;
-            opacity: 0;
-            transform: translateY(-10px);
-            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-            width: 100%;
-        }
-        .gin-details.show {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
+		display: none; /* Inizialmente nascosto */
+		margin-top: 10px;
+		padding: 10px;
+		background-color: #333;
+		border-radius: 10px;
+		width: 100%;
+	}
+
+	.gin-details.show {
+		display: block; /* Mostra il contenuto quando attivo */
+	}
     </style>
 </head>
 <body>
