@@ -343,12 +343,23 @@
                     <h3>${ginInfo.name}</h3>
                     <p><strong>Origine:</strong> ${ginInfo.origin}</p>
                     <p><strong>Alcol:</strong> ${ginInfo.alcohol}</p>
-					<p>${ginInfo.desc}</p>
+					<p><strong>Descrizione:</strong>${ginInfo.desc}</p>
                     <p><strong>Gusto:</strong> ${ginInfo.caract}</p>
-                    <p><strong>Botanicals:</strong> ${ginInfo.botanicals}</p>
+                    <p><strong>Botaniche:</strong> ${ginInfo.botanicals}</p>
                 `;
                 ginDetailElement.classList.add("show");
             }
+			console.log("Clicked:", ginKey);
+    const ginDetailElement = element.querySelector(".gin-details");
+    if (!ginDetailElement) {
+        console.error("Elemento non trovato per:", ginKey);
+        return;
+    }
+    if (ginDetailElement.classList.contains("show")) {
+        ginDetailElement.classList.remove("show");
+    } else {
+        ginDetailElement.classList.add("show");
+    }
         }
     </script>
 </body>
