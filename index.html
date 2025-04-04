@@ -427,6 +427,13 @@
                 <img src="images/saigon.jpg" alt="Saigon Baigur"> Saigon Baigur
                 <div class="gin-details"></div>
             </li>
+			<li onclick="toggleDetails(this, 'sakari')"
+			data-name="Sakari Shukugawa" 
+    data-origin="Giappone" 
+    data-caract="Morbido, Speziato">
+                <img src="images/sakari.jpg" alt="Sakari Shukugawa"> Sakari Shukugawa
+                <div class="gin-details"></div>
+            </li>
             <li onclick="toggleDetails(this, 'sakurao_hamagou')"
 			data-name="Sakurao Hamagou" 
     data-origin="Giappone" 
@@ -562,7 +569,8 @@
 				nikka_coffey: { name: "Nikka Coffey", origin: "Giappone", alcohol: "47%" , desc: " Il Gin Coffey Nikka nasce da 11 differenti botanicals, tra cui agrumi giapponesi quali Yuzu, Kabosu, Amanatsu e Shikuwasa, pepe Sansho, succo di mela e altri botanici tradizionali come ginepro, angelica, coriandolo, buccia di limone e scorza d’arancia. Al naso presenta profumi che evocano note di mela, albicocca e differenti tipi di agrumi, con una piacevole e delicata spolverata di pepe. In bocca si conferma elegante, agrumato e sorprende per la complessità degli aromi.", caract: "Agrumato, Speziato"  , botanicals: "Ginepro, angelica, coriandolo, scorza di limone, scorza d'arancia, yuzu, kabosu, amanatsu, shikuwasa, pepe Sansho, succo di mela." },
 				ki_no_bi_sei: { name: "Ki No Bi Sei", origin: "Giappone", alcohol: "54.5%" , desc: " Il gin “Ki No Bi Sei” della Kyoto Distillery è la versione Navy Strenght del “Ki No Bi”, cioè imbottigliata a gradazione alcolica più alta. È un gin secco dal gusto intenso e dal profilo elegante, che ben rappresenta l’arte giapponese nel campo della distillazione. L’utilizzo di sole botaniche del territorio contribuisce a donare al distillato un volto caratteristico e inimitabile, esaltandone la personalità tipicamente territoriale. Al naso presenta, invece, un bouquet che regala delicati profumi floreali, aromi di agrumi, un piacevole tocco balsamico di ginepro e sentori morbidi di spezie orientali.", caract: "Agrumato, Floreale"  , botanicals: "Ginepro, radice di iris, akamatsu, yuzu, limone, pepe Sansho, kinome, zenzero, tè verde Gyokuro, foglie di bambù, foglie di shiso rosso." },
 				benizakura: { name: "Benizakura 9184 #101", origin: "Giappone", alcohol: "45%" , desc: " Il Benizakura Craft Gin 9148 #101 è un gin artigianale prodotto dalla Hokkaido Liberty Whisky presso la distilleria Benizakura, situata nell'estremo nord del Giappone, sull'isola di Hokkaido. La ricetta #101 è la base per tutte le altre varianti della distilleria e mira a creare un gin che unisca botaniche classiche inglesi come il ginepro, il coriandolo e l'angelica, con ingredienti tipicamente giapponesi come l'alga Hidaka, il daikon essiccato e il fungo shiitake. Oltre a questi, la ricetta include cannella, scorza di limone, mirtillo, lavanda, cardamomo, chiodi di garofano, pepe nero e pepe rosa. La maggior parte delle botaniche proviene dal parco Benizakura, che dà il nome alla distilleria, e dalla stessa isola di Hokkaido. Al palato, il ginepro e la lavanda offrono una fragranza fresca, seguita dal dolce aroma del mirtillo. Questo gin ben bilanciato sorprende con un lato piccante e deciso, compensato dalla dolcezza umami dell'alga Hidaka, del fungo shiitake e del daikon.", caract: "Agrumato, Speziato, Erbaceo"  , botanicals: "Ginepro, coriandolo, angelica, cannella, alga hidaka, scorza di limone, mirtillo, ravanello essiccato, lavanda, cardamomo, chiodi di garofano, pepe nero, fungo shiitake essiccato, pepe rosa." },
-            };
+				sakari: { name: "Sakari Shukugawa", origin: "Giappone", alcohol "41%", desc: "Sakari è un birrificio di sake di Nishinomiya, in Giappone. Oltre a produrre il suo sake premiato a livello mondiale, Sakari ha deciso di produrre un gin, ottenuto con ingredienti derivati ​​dal sake. Sakari è un gin artigianale che unisce il sapore caratteristico del sake e gli aromi di selezionati botanici giapponesi (sansho, shiso, hinoki, yuzu, cedro giapponese e petali di fiori di ciliegio sakura). Al naso offre note agrumate di yuzu e cedro. Al palato è morbido, fresco e agrumato, con leggere note pepate di pepe sansho.", caract: "Morbido, Speziato" , botanicals: "Ginepro, sake kasu, cedro giapponese, pepe Sansho, shiso, cipresso, yuzu, fiori di ciliegio." },
+			};
             
             const ginInfo = ginData[ginKey];
             if (ginDetailElement.classList.contains("show")) {
