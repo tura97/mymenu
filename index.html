@@ -84,6 +84,7 @@
                 <option value="Australia">Australia</option>
 				<option value="Belgio">Belgio</option>
 				<option value="Ecuador">Ecuador</option>
+				<option value="Filippine">Filippine</option>
 				<option value="Francia">Francia</option>
 				<option value="Germania">Germania</option>
 				<option value="Giappone">Giappone</option>
@@ -442,6 +443,13 @@
                 <img src="images/kinobi_sei.jpg" alt="Ki No Bi Sei"> Ki No Bi Sei
                 <div class="gin-details"></div>
             </li>
+			<li onclick="toggleDetails(this, 'mayfair_hightea')"
+			data-name="Mayfair High Tea" 
+    data-origin="Inghilterra" 
+    data-caract="Floreale, Speziato">
+                <img src="images/mayfair_hightea.jpg" alt="Mayfair High Tea"> Mayfair High Tea
+                <div class="gin-details"></div>
+            </li>
             <li onclick="toggleDetails(this, 'monkey_47')"
 			data-name="Monkey 47" 
     data-origin="Germania" 
@@ -496,6 +504,20 @@
     data-origin="Giappone" 
     data-caract="Agrumato, Balsamico">
                 <img src="images/sakuraolimited.jpg" alt="Sakurao Limited"> Sakurao Limited
+                <div class="gin-details"></div>
+            </li>
+			<li onclick="toggleDetails(this, 'santaana')"
+			data-name="Santa Ana" 
+    data-origin="Filippine" 
+    data-caract="Esotico, Floreale">
+                <img src="images/santaana.jpg" alt="Santa Ana"> Santa Ana
+                <div class="gin-details"></div>
+            </li>
+			<li onclick="toggleDetails(this, 'silent')"
+			data-name="Silent Pool" 
+    data-origin="Inghilterra" 
+    data-caract="Agrumato, Balsamico">
+                <img src="images/silent.jpg" alt="Silent Pool"> Silent Pool
                 <div class="gin-details"></div>
             </li>
             <li onclick="toggleDetails(this, 'skin_gin')"
@@ -634,6 +656,9 @@
 				sunsp: { name: "Hendrick's Sunspell", origin: "Scozia", alcohol: "43.4%" , desc: " Hendrick’s Sunspell è un gin che trae ispirazione dai tramonti vibranti che immergono nella sua luce magica l’isola mistica di Ailsa Craig. La maestra distillatrice Lesley Gracie ha catturato questa sensazione calda e incantevole in una goccia che unisce armoniosamente agrumi e spezie esotiche (come camomilla, semi di finocchio e scorza di limone) con le tipiche note dell’Hendrick’s (quella floreale della rosa e quella rinfrescante del cetriolo). Il risultato è un viaggio del gusto che celebra le ultime ore del giorno! Al naso offre sentori agrumati e delicati che si sviluppano lentamente ma costantemente. Al palato è agrumato, speziato e fresco, con un finale persistente e rinfrescante.", caract: "Agrumato, Fresco"  , botanicals: "Camomilla, fiore di sambuco, ginepro, scorza di limone, scorza d'arancia, cumino dei prati, coriandolo, pepe di cubebe, radice di angelica, radice di achillea, radice di iris, rosa, cetriolo, semi di finocchio." },
                 sakari: { name: "Sakari Shukugawa", origin: "Giappone", alcohol: "41%" , desc: " Sakari è un birrificio di sake di Nishinomiya, in Giappone. Oltre a produrre il suo sake premiato a livello mondiale, Sakari ha deciso di produrre un gin, ottenuto con ingredienti derivati ​​dal sake.  Sakari è un gin artigianale che unisce il sapore caratteristico del sake e gli aromi di selezionati botanici giapponesi (sansho, shiso, hinoki, yuzu, cedro giapponese e petali di fiori di ciliegio sakura). Al naso offre note agrumate di yuzu e cedro. Al palato è morbido, fresco e agrumato, con leggere note pepate di pepe sansho.", caract: "Morbido, Speziato"  , botanicals: "Ginepro, sake kasu, cedro giapponese, pepe Sansho, shiso, cipresso giapponese, yuzu, fiori di ciliegio." },
 			    zealot: { name: "Zealot's Heart", origin: "Scozia", alcohol: "44%" , desc: " Zealot's Heart è un gin nato dalla dedizione estrema di BrewDog Distilling Co, che ha testato ben 197 ricette prima di arrivare a quella definitiva. Il ginepro è il protagonista assoluto, scelto tra diverse varietà mondiali, con la versione italiana selezionata per il suo profilo aromatico superiore. Il nome stesso, 'Cuore dello Zelota', richiama la passione quasi fanatica con cui è stato creato, e la bottiglia blu con illustrazioni dettagliate ne riflette lo spirito artigianale. All’olfatto, Zealot’s Heart sprigiona intense note di ginepro, agrumi freschi (lime e pompelmo) e lavanda, accompagnate da un sottofondo speziato. Al palato è fresco e deciso, con una base erbacea-terrosa, punte speziate di pepe e macis, e un finale lungo e agrumato, perfettamente bilanciato.", caract: "Agrumato, Speziato"  , botanicals: "Ginepro, coriandolo, scorza di lime, radice di angelica, bacche di goji, scorza di limone, lavanda, scorza di pompelmo, cardamomo, olmaria, lemongrass, pimento, pepe Sansho, curcuma, foglie di lime Kaffir, pepe di Sichuan, grani del paradiso, macis, anice stellato." },
+				mayfair_hightea: { name: "Mayfair High Tea", origin: "Inghilterra", alcohol: "44%" , desc: " Mayfair High Tea è un London Dry Gin speziato e floreale, prodotto dalla Thames Distillery, una tra ultime distillerie indipendenti rimaste nella capitale inglese. Viene ottenuto da una doppia distillazione di diverse botaniche tra cui bergamotto, tè Earl Grey, coriandolo, angelica, liquirizia e petali di rosa. Al naso offre un aroma speziato e fruttato. Al palato dominano le bacche di ginepro che vengono poi completate in modo morbido dalle note di rosa e tè.", caract: "Floreale, Speziato"  , botanicals: "Ginepro, coriandolo, angelica, coriandolo, liquirizia, bergamotto, petali di rosa, tè Earl Grey." },
+				santaana: { name: "Santa Ana", origin: "Filippine", alcohol: "42.3%" , desc: " Santa Ana è un particolare gin filippino creato dai produttori del famoso Rum Don Papa. Viene ottenuto dall’infusione in alcol di diverse botaniche tra cui ginepro, coriandolo, limone, arancia amara, radice di angelica, radice di iris e altre 4 botaniche filippine. Vengono utilizzati i fiori dell’albero di Ylang Ylang (noti per essere uno degli ingredienti del profumo Chanel n°5), Alpinia, Calamansi (noto come il lime delle Filippine) e le arance Dalandan. Viene poi imbottigliato in una bottiglia di vetro ispirata all’art déco, adornata con una splendida scena della giungla. Al naso e al palato è delicato e floreale, con il sapore fresco di agrumi tropicali che completa la ricetta.", caract: "Esotico, Floreale"  , botanicals: "Ginepro, coriandolo, radice di angelica, limone, arancia amara, radice di giaggiolo, finocchio, alpinia, calamansi, dalandan, ylang-ylang." },
+				silent: { name: "Silent Pool", origin: "Inghilterra", alcohol: "43%" , desc: " Questo gin è un distillato che nasce dall’infusione in una base alcolica di ben 24 botaniche differenti, utilizzando un alambicco scaldato a legna non a fiamma diretta, ma tramite una specie di stufa. Le varie botaniche vengono separate in tre gruppi e ognuno subisce un processo diverso: macerazione, Gin Tea infusion e Basket Steam infusion. Nella prima, le botaniche primarie (bacche di ginepro bosniache, semi di coriandolo, radici di angelica dal Belgio, radici di giaggiolo, liquirizia, cassia, cubeb, grani del Paradiso, cardamomo, bergamotto, buccia di arancia amara miele) vengono immerse nella base alcolica per 24 ore e poi il tutto viene diluito in acqua proveniente da una fonte locale. In questo modo l’alcol dissolve gli oli così la distillazione seguente è migliore e permette di dare vita a sapori più rotondi. Nella seconda, le botaniche che hanno un basso contenuto di oli (foglie di lime Kaffir, camomilla, rosa, tiglio e fiore di sambuco) vengono prima fatte macerare nell’alcol, poi viene eliminato il materiale erbaceo non desiderato e infine si procede con la distillazione, dando vita, con questa combinazione di ingredienti, a note intense e complesse. Nella terza, le botaniche più delicate (ginepro macedone, angelica bulgara, lavanda, bucce di lime fresco e di arancia, pere fresche essiccate) vengono messe in un contenitore posizionato nel collo dell’alambicco, dando vita alle note più aromatiche del gin. Silent Pool è un gin ricco di aromi, ma da un palato gineproso molto pulito. Si sentono in particolare le note agrumate date dalle foglie di Combava e le bucce.", caract: "Agrumato, Balsamico"  , botanicals: "Ginepro bosniaco, ginepro macedone, coriandolo, radice di angelica belga, radice di angelica bulgara, radice di giaggiolo, liquirizia, cassia, cubebe, grani del Paradiso, cardamomo, bergamotto, buccia di arancia amara, miele di Albury, foglie di lime Kaffir, camomilla, rosa, tiglio, fiore di sambuco, lavanda, buccia di lime fresco, buccia di arancia, pere essiccate." },
 				beniz106: { name: "Benizakura 9184 #0106 'Powder Snow'", origin: "Giappone", alcohol: "50%" , desc: " Il Benizakura 9148 #0106 'Powder Snow' è un gin artigianale giapponese prodotto dalla Benizakura Distillery di Sapporo, sull'isola di Hokkaido, rinomata per l’uso di ingredienti locali e un approccio sperimentale alla distillazione. Questa edizione limitata si ispira alla purezza dell’inverno giapponese, con foglia d’argento che fluttua nella bottiglia evocando l’effetto di una palla di neve. La particolarità di questo gin risiede nella sua base alcolica, derivata dalla distillazione di latte fresco e formaggio blu di Hokkaido, che conferisce rotondità e una dolcezza cremosa al distillato. Le botaniche includono fave di cacao, arancia, mais, fragola bianca, tartufo nero e cannella, creando un profilo aromatico complesso. Al naso è morbido e vellutato, con note lattiche, fruttate e leggermente speziate. Al palato è cremoso, dolce-speziato, con sfumature terrose e un elegante tocco umami, che lo rendono unico e avvolgente.", caract: "Morbido, Fruttato, Speziato"  , botanicals: "Ginepro, latte, fave di cacao, mais, arancia, chicci di caffè, cannella, fragola e tartufo." },
 	};
             
