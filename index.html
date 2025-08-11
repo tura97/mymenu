@@ -345,6 +345,13 @@
                 <img src="images/lavender.jpg" alt="Fukagawa Tsuburo Lavender"> Fukagawa Tsuburo Lavender
                 <div class="gin-details"></div>
             </li>
+			<li onclick="toggleDetails(this, 'cividat')"
+			data-name="Geometrie Cividât" 
+    data-origin="Italia" 
+    data-caract="Agrumato, FLoreale, Speziato">
+                <img src="images/cividat.jpg" alt="Geometrie Cividât"> Geometrie Cividât
+                <div class="gin-details"></div>
+            </li>
             <li onclick="toggleDetails(this, 'hachiban')"
 			data-name="Hachiban Gunjo Strength" 
     data-origin="Giappone" 
@@ -471,6 +478,13 @@
                 <img src="images/kinobi_sei.jpg" alt="Ki No Bi Sei"> Ki No Bi Sei
                 <div class="gin-details"></div>
             </li>
+			<li onclick="toggleDetails(this, 'marecapri')"
+			data-name="Mare Capri" 
+    data-origin="Spagna" 
+    data-caract="Agrumato, Mediterraneo">
+                <img src="images/mare_capri.jpg" alt="Mare Capri"> Mare Capri
+                <div class="gin-details"></div>
+            </li>
 			<li onclick="toggleDetails(this, 'mayfair_hightea')"
 			data-name="Mayfair High Tea" 
     data-origin="Inghilterra" 
@@ -511,6 +525,13 @@
     data-origin="Italia" 
     data-caract="Floreale, Secco">
                 <img src="images/peterflorence.jpg" alt="Peter in Florence"> Peter in Florence
+                <div class="gin-details"></div>
+            </li>
+			<li onclick="toggleDetails(this, 'peterspring')"
+			data-name="Peter in Florence Spring Limited Edition" 
+    data-origin="Italia" 
+    data-caract="Floreale, Speziato">
+                <img src="images/peterflorencespring.jpg" alt="Peter in Florence Spring Limited Edition"> Peter in Florence Spring Limited Edition
                 <div class="gin-details"></div>
             </li>
 			<li onclick="toggleDetails(this, 'peternavy')"
@@ -659,6 +680,9 @@
 		}
             const ginData = {
                 arcipelago: { name: "Arcipelago", origin: "Italia", alcohol: "42%" , desc: " Arcipelago Gin è un gin toscano prodotto dall'Antico Liquorificio Guiducci, che si ispira ai profumi e ai sapori delle isole toscane. È un London Dry Gin, distillato con sette botaniche, tra cui spiccano il ginepro, l'elicrisio (proveniente da Capraia), e i limoni (dall'Isola d'Elba). Il risultato è un gin con note agrumate, erbacee e un finale minerale.", caract: "Agrumato, Erbaceo"  , botanicals: "Ginepro, elicrisio, limoni, arance, timo, rosmarino e basilico." },
+                cividat: { name: "Geometrie Cividât", origin: "Italia", alcohol: "42%" , desc: " Cividât è l’espressione di 19 botaniche, tutti rigorosamente provenienti dai dintorni di Cividale, che ne determinano la particolare colorazione e il delicato e unico profumo. Questo gin è prodotto dalla distillazione di selezionate materie prime (cereali e bacche di ginepro) e dalla macerazione delle botaniche, una miscela di erbe, spezie, piante e radici, in alcool di qualità con interessante apporto di diversi agrumi. Ne deriva un gin agrumato e floreale, molto carico nell'aroma e nel colore. Consistente la presenza del ginepro che, tuttavia, per il buon abbinamento con le altre essenze, non risulta invadente..", caract: "Agrumato, Floreale, Speziato"  , botanicals: "Ginepro, varie erbe, piante e radici." },
+                peterspring: { name: "Peter in Florence Spring Limited Edition", origin: "Italia", alcohol: "43%" , desc: " Peter in Florence ha da poco lanciato la sua Spring Limited Edition, inaugurando una serie di quattro edizioni limitate stagionali. Peter in Florence Spring Limited Edition è un gin realizzato completamente in Toscana attraverso un elegante mix di 11 botaniche, in particolare di zafferano e camomilla, rigorosamente made in Tuscany. Zafferano e camomilla donano a questo gin note speziate, floreali e un colore giallo intenso. Al palato rimane comunque un gin secco, ma con una bella spinta aromatica data dallo zafferano e che, insieme alla camomilla, dona un finale speziato e molto profumato..", caract: "Floreale, Speziato"  , botanicals: "Ginepro, radice di iris, petali di iris, scorza di limone, scorza di bergamotto, semi di cardamomo, radice di angelica, coriandolo, corteccia di cassia, camomilla, zafferano, fiori di rosmarino." },
+                marecapri: { name: "Mare Capri", origin: "Spagna", alcohol: "42.7%" , desc: " Per celebrare i suoi 10 anni, Gin Mare lancia un’edizione speciale e limitata che è un omaggio ai profumi di Capri, isola iconica e maestosa. I limoni dell’isola ed il bergamotto della penisola sorrentina, in aggiunta alle altre botaniche utilizzate nella sua versione normale, danno vita all’essenza del Mediterraneo. Gin Mare Capri ha una bottiglia in vetro con effetto butterato che conferisce al prodotto una piacevole sensazione di artigianalità e di cura del dettaglio. Presenta poi un’etichetta in stoffa bianca con la dicitura “distilled from Capri’s lemon & bergamot” che evidenzia la novità sostanziale di questa produzione, dedicata alla famosa isola napoletana. Molto originale è anche il tappo completamente in sughero, con un elemento decorativo in metallo nella parte superiore che ricorda la scelta stilistica di un altro grande gin, il Monkey 47. Al naso presenta le stesse note del classico Gin Mare a cui si aggiunge una leggera nota citrica di bergamotto. Al palato è agrumato con sentori di limone e bergamotto che relegano in secondo piano le classiche note di rosmarino e olive. In sintesi: sembra che la parte citrica sia più marcata rispetto al classico Gin Mare..", caract: "Agrumato, Mediterraneo"  , botanicals: "Ginepro, olive arbequina, basilico, timo, rosmarino, coriandolo, cardamomo verde, arancia, limoni di Capri, bergamotto." },
                 hendricks: { name: "Hendrick's", origin: "Scozia", alcohol: "44%" , desc: " L’Hendrick’s, contenuto in una bottiglia che ricorda le boccette delle farmacie di epoca Vittoriana, è un gin rinfrescante dal carattere forte e dall’aroma floreale e delizioso dovuto, fra le altre cose, all’essenza di cetriolo e all’olio di petali di rose.", caract: "Erbaceo, Floreale"  , botanicals: "Camomilla, fiore di sambuco, ginepro, scorza di limone, scorza d'arancia, cumino dei prati, coriandolo, pepe di cubebe, radice di angelica, radice di achillea, radice di iris, rosa, cetriolo." },
                 oasium: { name: "Hendrick's Oasium", origin: "Scozia", alcohol: "43.4%" , desc: " Hendrick’s Oasium rappresenta la nuova edizione speciale del famoso marchio scozzese, creato ispirandosi ad un viaggio che il Master Distiller Lesley Gracie ha fatto in un’oasi nel deserto. In questa versione, il ginepro è arricchito da un elegante mix di freschi aromi verdi, delicate note erbacee e un vivace tocco di agrumi (specialmente pompelmo rosa), che segna un finale decisamente persistente e leggermente speziato. Al palato i classici sapori del cetriolo e dei petali di rosa sono accompagnati da una colorata selezione di papaya, guava e verbena.", caract: "Agrumato, Fresco"  , botanicals: "Camomilla, fiore di sambuco, ginepro, scorza di limone, scorza d'arancia, cumino dei prati, coriandolo, pepe di cubebe, radice di angelica, radice di achillea, radice di iris, rosa, cetriolo, pompelmo, papaya, guava, verbena" },
                 orbium: { name: "Hendrick's Orbium", origin: "Scozia", alcohol: "43.3%" , desc: " Hendrick’s Orbium è un’etichetta speciale che rappresenta un’interessante variante del classico Gin Hendrick’s. L’idea nasce dal desiderio di creare un innovativo distillato dal gusto più delicato, morbido e raffinato, che si differenziasse dal resto della gamma. Oltre le classiche botaniche vengono utilizzate chinino (al posto del classico cetriolo), assenzio e fiore di loto blu. Questi tre nuovi ingredienti conferiscono aromi sottili, eleganti e floreali, che rendono questo gin suadente ed equilibrato.", caract: "Balsamico, Morbido"  , botanicals: "Camomilla, fiore di sambuco, ginepro, scorza di limone, scorza d'arancia, cumino dei prati, coriandolo, pepe di cubebe, radice di angelica, radice di achillea, radice di iris, rosa, chinino, assenzio, fiore di loto blu." },
